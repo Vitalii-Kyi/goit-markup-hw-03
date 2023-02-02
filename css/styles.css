@@ -39,9 +39,6 @@ img {
 
 
 
-.list {
-    list-style: none;
-}
 
 .link {
     text-decoration: none;
@@ -102,7 +99,6 @@ body {
 
 .address-list {
     list-style: none;
-    font-style: normal;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -135,7 +131,6 @@ body {
     background: var(--primary-brand-color);
     border: 0px;
     border-radius: 4px;
-    cursor: pointer;
 }
 
 .btn:hover,
@@ -240,7 +235,6 @@ body {
     background: var(--light-color);
     border: 1px solid var(--accept-color);
     border-radius: 4px;
-    cursor: pointer;
 }
 
 .filter-btn:hover,
