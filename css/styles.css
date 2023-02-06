@@ -149,12 +149,9 @@ body {
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--btn-color);
-
-    
 }
 
 .btn {
-        
     padding: 16px 32px;
     min-width: 169px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -177,13 +174,6 @@ body {
     background-color: var(--pressed-state-color);
 }
 
-/*--section1--*/
-
-/*.advantages {
-    padding-top: 120px;
-    padding-bottom: 120px;
-    margin-bottom: 120px;
-}*/
 
 .advantages-tile {
     font-weight: 500;
@@ -208,10 +198,6 @@ body {
     letter-spacing: 0.02em;
     color: var(--dark-color);
 }
-
-/*.services-container {
-   
-}*/
 
 /*--section3--*/
 
@@ -279,7 +265,6 @@ body {
 }
 
 
-
 /*--------portfolio--------*/
 /*--filter--*/
 
@@ -309,6 +294,10 @@ body {
 /*--project card--*/
 
 .project-card-title {
+    padding-top: 32px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -317,6 +306,8 @@ body {
 }
 
 .category-title {
+    padding-bottom: 32px;
+    padding-left: 16px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
