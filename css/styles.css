@@ -50,6 +50,10 @@ body {
     outline: 1px solid red;
 }
 
+.section {
+    padding-bottom: 120px;
+}
+
 .link {
     text-decoration: none;
 }
@@ -82,11 +86,20 @@ body {
 }
 
 .header-container {
+    display: flex;
+    align-items: center;
     padding: 24px 15px;
     border-bottom: 1px solid var(--accept-color);    
 }
 
-.logo-header {
+.header-navigation {
+    display: flex;
+    align-items: center;
+    margin-right: 332px;
+}
+
+.header-logo {
+    margin-right: 76px;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
@@ -98,6 +111,14 @@ body {
 
 .logo-studio {
     color: var(--dark-color);
+}
+
+.header-list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
 }
 
 .nav-link {
@@ -116,24 +137,45 @@ body {
 }
 
 .address-list {
-    list-style: none;
+    display: flex;
+    }
+
+.address-mail {
+    margin-right: 40px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--general-text-color);
 }
 
-.address-list:hover,
-.address-list:focus {
+.address-mail:hover,
+.address-mail:focus {
     color: var(--pressed-state-color);
 }
 
-/*--------Hero--------*/
-.section {
-    padding-bottom: 120px;
+.address-tel {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--general-text-color);
 }
 
+.address-tel:hover,
+.address-tel:focus {
+    color: var(--pressed-state-color);
+}
+
+
+
+
+/*--------Hero--------*/
+/*
 .hero-section {
+    padding: 188px 15px;
+    background-color: var(--dark-color);
+}
+*/
+.hero-container {
     padding: 188px 15px;
     background-color: var(--dark-color);
 }
@@ -152,8 +194,10 @@ body {
 }
 
 .btn {
-    padding: 16px 32px;
     min-width: 169px;
+    padding: 16px 32px;
+    margin: 0 auto;
+    display: block;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: 0;
     border-radius: 4px;
@@ -165,17 +209,27 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    align-items: center;
 }  
-    
 
 .btn:hover,
 .btn:focus {
     background-color: var(--pressed-state-color);
 }
 
+/*--section1--*/
+
+.advantages-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.advantages-item {
+    max-width: 264px;
+}
 
 .advantages-tile {
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -183,7 +237,7 @@ body {
     color: var(--dark-color);
 }
 
-.advantages-list {
+.advantages-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -192,11 +246,20 @@ body {
 /*--section2--*/
 
 .services-title {
+    text-align: center;
     padding-bottom: 72px;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     color: var(--dark-color);
+}
+
+.services-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    gap: 24px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 /*--section3--*/
@@ -205,6 +268,7 @@ body {
     background-color: var(--light-color);
 }
 .team-title {
+    text-align: center;
     padding-bottom: 72px;
     font-size: 36px;
     line-height: 1.11;
@@ -215,12 +279,24 @@ body {
     background-color: var(--light-color);
 }
 
-.team-card-bg {
-    list-style: none;
-    background-color: var(--btn-color);
+.team-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    gap: 24px;
+}
+
+.team-card {
+    /*list-style: none;*/
+    background: var(--btn-color);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-member {
+    text-align: center;
+    padding-top: 32px;
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -230,6 +306,8 @@ body {
 }
 
 .member-position {
+    text-align: center;
+    padding-bottom: 8px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -240,6 +318,13 @@ body {
 .footer-section {
     padding: 100px 0;
     background-color: var(--dark-color);
+}
+
+.footer-block {
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    max-width: 264px;
 }
 
 .logo-footer {
@@ -257,7 +342,7 @@ body {
 }
 
 .invitation {
-    padding-top: 16px;
+    margin-top: 16px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -273,7 +358,17 @@ body {
     padding-bottom: 72px;
 }
 
+.filter {
+    display: flex;
+    /*flex-direction: row;*/
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+
 .filter-btn {
+    padding: 12px 24px;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
