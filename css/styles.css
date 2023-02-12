@@ -50,10 +50,6 @@ body {
     outline: 1px solid red;
 }
 
-.section {
-    padding-bottom: 120px;
-}
-
 .link {
     text-decoration: none;
 }
@@ -81,16 +77,15 @@ body {
 /*--------header--------*/
 
 .header {
+    padding: 24px 0;
     background-color: var(--btn-color);
-    /*padding: 24px 0;*/
+    border-bottom: 1px solid var(--accept-color);
 }
 
 .header-container {
     display: flex;
     align-items: center;
-    padding: 24px 15px;
-    border-bottom: 1px solid var(--accept-color);    
-}
+   }
 
 .header-navigation {
     display: flex;
@@ -166,11 +161,14 @@ body {
 }
 
 
-/*--------Hero--------*/
+/*--------hero--------*/
 
 .hero-section {
-    padding: 188px 15px;
     background-color: var(--dark-color);
+}
+
+.hero-content {
+    padding: 188px 0px;
 }
 
 .hero-title {
@@ -210,6 +208,11 @@ body {
 
 /*--section1--*/
 
+.advantages-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 .advantages-list {
     display: flex;
     justify-content: space-between;
@@ -237,9 +240,13 @@ body {
 
 /*--section2--*/
 
+.services-section {
+    padding-bottom: 120px;
+}
+
 .services-title {
     text-align: center;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
@@ -251,17 +258,19 @@ body {
     justify-content: center;
     flex-wrap:wrap;
     gap: 24px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    /*filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));*/
 }
 
 /*--section3--*/
 
 .team-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
     background-color: var(--light-color);
 }
 .team-title {
     text-align: center;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
     font-size: 36px;
     line-height: 1.11;
     color: var(--dark-color);
@@ -281,13 +290,17 @@ body {
 .team-card {
     
     background-color: var(--btn-color);
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    /*box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);*/
     border-radius: 0px 0px 4px 4px;
+}
+
+.team-card-text {
+  padding-top: 32px;
+  padding-bottom: 32px;  
 }
 
 .team-member {
     text-align: center;
-    padding-top: 32px;
     margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
@@ -299,7 +312,6 @@ body {
 
 .member-position {
     text-align: center;
-    padding-bottom: 8px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -345,14 +357,17 @@ body {
 /*--------portfolio--------*/
 /*--filter--*/
 
+.portfoilio-section {
+   padding-top: 96px;
+   padding-bottom: 120px; 
+}
+
 .container-btn {
-    padding-top: 96px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .filter {
     display: flex;
-    /*flex-direction: row;*/
     justify-content: center;
     align-items: center;
     gap: 24px;
@@ -392,11 +407,14 @@ body {
     border: 1px solid var(--accept-color);
 }
 
-.project-card-title {
+.project-card-text {
     padding-top: 32px;
-    padding-bottom: 8px;
+    padding-bottom: 32px;
+}
+
+.project-card-title {
     padding-left: 16px;
-    
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -405,7 +423,6 @@ body {
 }
 
 .category-title {
-    padding-bottom: 32px;
     padding-left: 16px;
     font-size: 16px;
     line-height: 1.5;
