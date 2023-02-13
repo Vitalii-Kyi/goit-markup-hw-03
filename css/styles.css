@@ -164,11 +164,8 @@ body {
 /*--------hero--------*/
 
 .hero-section {
-    background-color: var(--dark-color);
-}
-
-.hero-content {
     padding: 188px 0px;
+    background-color: var(--dark-color);
 }
 
 .hero-title {
@@ -362,10 +359,6 @@ body {
    padding-bottom: 120px; 
 }
 
-.container-btn {
-    margin-bottom: 72px;
-}
-
 .filter {
     display: flex;
     justify-content: center;
@@ -375,6 +368,7 @@ body {
 
 .filter-btn {
     padding: 12px 24px;
+    margin-bottom: 72px;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -410,10 +404,10 @@ body {
 .project-card-text {
     padding-top: 32px;
     padding-bottom: 32px;
+    padding-left: 16px;
 }
 
 .project-card-title {
-    padding-left: 16px;
     margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
@@ -423,7 +417,6 @@ body {
 }
 
 .category-title {
-    padding-left: 16px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
